@@ -11,6 +11,54 @@ public class Comment {
     private int idResponseComment[];
     private boolean isСomplain;
 
+    //Дополненные переменные
+
+    private boolean canPost;
+    private boolean groupsCanPost;
+    private boolean canClose;
+    private boolean canOpen;
+    private int countComment;
+
+    public int getCountComment() {
+        return countComment;
+    }
+
+    public void setCountComment(int countComment) {
+        this.countComment = countComment;
+    }
+
+    public boolean isCanPost() {
+        return canPost;
+    }
+
+    public void setCanPost(boolean canPost) {
+        this.canPost = canPost;
+    }
+
+    public boolean isGroupsCanPost() {
+        return groupsCanPost;
+    }
+
+    public void setGroupsCanPost(boolean groupsCanPost) {
+        this.groupsCanPost = groupsCanPost;
+    }
+
+    public boolean isCanClose() {
+        return canClose;
+    }
+
+    public void setCanClose(boolean canClose) {
+        this.canClose = canClose;
+    }
+
+    public boolean isCanOpen() {
+        return canOpen;
+    }
+
+    public void setCanOpen(boolean canOpen) {
+        this.canOpen = canOpen;
+    }
+
     public int getIdComment() {
         return idComment;
     }
