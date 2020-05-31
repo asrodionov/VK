@@ -11,7 +11,6 @@ public class Post {
     private boolean isSubscribe;
     private boolean isСomplain;
     private boolean isBookmark;
-    private int countView;
 
     //Дополненные переменные
 
@@ -20,7 +19,7 @@ public class Post {
     private int createdBy;
     private int replyOwnerId;
     private int replyPostId;
-    private int friensOnly;
+    private boolean friensOnly;
     private String copyright;
     private String postType;
     private int signerId;
@@ -72,11 +71,11 @@ public class Post {
         this.replyPostId = replyPostId;
     }
 
-    public int getFriensOnly() {
+    public boolean getFriensOnly() {
         return friensOnly;
     }
 
-    public void setFriensOnly(int friensOnly) {
+    public void setFriensOnly(boolean friensOnly) {
         this.friensOnly = friensOnly;
     }
 
@@ -240,13 +239,13 @@ public class Post {
         isBookmark = bookmark;
     }
 
-    public int getCountView() {
-        return countView;
-    }
+    private Geo[] geos;
 
-    public void setCountView(int countView) {
-        this.countView = countView;
-    }
+    private LikesInfo[] likesInfos;
 
+    private RepostInfo[] repostInfos;
 
+    private Comment[] comments;
+
+    private View[] views;
 }
