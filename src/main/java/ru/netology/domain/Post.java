@@ -31,6 +31,11 @@ public class Post {
     private boolean isFavorite;
     private int postponedId;
 
+    private Geo geo;
+    private LikesInfo likesInfo;
+    private RepostInfo repostInfo;
+    private View view;
+    private Comment comment;
     public int getOwnerId() {
         return ownerId;
     }
@@ -239,13 +244,43 @@ public class Post {
         isBookmark = bookmark;
     }
 
-    private Geo[] geos;
+    public Geo getGeo() {
+        return geo;
+    }
 
-    private LikesInfo[] likesInfos;
+    public void setGeo(Geo geo) {
+        this.geo = geo;
+    }
 
-    private RepostInfo[] repostInfos;
+    public LikesInfo getLikesInfo() {
+        return likesInfo;
+    }
 
-    private Comment[] comments;
+    public void setLikesInfo(LikesInfo likesInfo) {
+        this.likesInfo = likesInfo;
+    }
 
-    private View[] views;
+    public RepostInfo getRepostInfo() {
+        return repostInfo;
+    }
+
+    public void setRepostInfo(RepostInfo repostInfo) {
+        this.repostInfo = repostInfo;
+    }
+
+    public View getView() {
+        return view;
+    }
+
+    public void setView(View view) {
+        this.view = view;
+    }
+
+    public Comment getComment() {
+        return comment;
+    }
+
+    public void setComment(Comment comment) {
+        this.comment = comment;
+    }
 }
